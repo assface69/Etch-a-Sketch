@@ -1,4 +1,14 @@
 const body = document.querySelector('body');
+  const button = document.createElement('button');
+button.textContent = 'click :)';
+  button.addEventListener('click', () => {
+    prompt('how many squares per grid?');
+  })
+  
+
+
+  body.appendChild(button);
+
 const div = document.createElement('div');
 div.classList.add('grid');
 div.id = 'myGrid';
@@ -37,3 +47,4 @@ body.appendChild(div);
       gridItem.style.backgroundColor = '';
     })
   })
+
