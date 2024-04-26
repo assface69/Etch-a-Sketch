@@ -23,3 +23,17 @@ body.appendChild(div);
         gridContainer.appendChild(gridItem);
       }
     }
+
+    const gridItems = document.querySelectorAll('.grid-item');
+
+2 
+    gridItems.forEach((gridItem) => {
+
+    gridItem.addEventListener('mouseover', () => {
+      gridItem.style.backgroundColor = 'blue';
+    })
+
+    gridItem.addEventListener('mouseout', () => {
+      gridItem.style.backgroundColor = '';
+    })
+  })
